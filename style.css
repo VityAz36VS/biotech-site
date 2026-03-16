@@ -337,6 +337,7 @@ button {
   gap: 12px;
   margin-top: 20px;
 }
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -833,4 +834,3 @@ textarea.error {
   max-width: 900px;
   margin: 0 auto 40px auto;
 }
-
