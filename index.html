@@ -6,20 +6,32 @@
     <title>ООО «Лаборатория Биотехнологий»</title>
     <meta
       name="description"
-      content="ООО «Лаборатория Биотехнологий» - разработка биотехнологических решений в области переработки органических отходов и осадков сточных вод."
+      content="ООО «Лаборатория Биотехнологий» — технологическое решение безотходной биологической переработки осадков сточных вод. Проект Yummy Waste при поддержке ФСИ и ДВФУ."
     />
+
+    <!-- Open Graph — для шаринга в Telegram, ВКонтакте и т.д. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Лаборатория Биотехнологий — Yummy Waste" />
+    <meta property="og:description" content="Безотходная двухступенчатая биологическая переработка осадков сточных вод. Анаэробный биореактор + инсектарий BSFL." />
+    <meta property="og:url" content="https://ВАШ-САЙТ.ru/" />
+    <meta property="og:image" content="https://ВАШ-САЙТ.ru/images/og-preview.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- TODO: добавьте favicon: <link rel="icon" href="images/favicon.ico" /> -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body id="top">
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand brand-with-logo">
+          <!-- TODO: раскомментируйте и укажите путь к логотипу, когда он будет готов -->
+          <!-- <a href="#top" class="brand-logo-link">
+            <img src="images/logo.svg" alt="Лаборатория Биотехнологий" class="brand-logo" />
+          </a> -->
           <div class="brand-text">
             <div class="brand-title">Лаборатория Биотехнологий</div>
             <div class="brand-subtitle">
@@ -40,6 +52,7 @@
           <a href="#products">Продукция</a>
           <a href="#company">О компании</a>
           <a href="#team">Команда</a>
+          <a href="#publications">Публикации</a>
           <a href="#contacts">Контакты</a>
         </nav>
       </div>
@@ -49,7 +62,7 @@
       <section class="hero section">
         <div class="container hero-grid">
           <div class="hero-content">
-            <div class="hero-badge">Сайт компании</div>
+            <div class="hero-badge">Студенческий стартап ФСИ</div>
             <h1>Безотходная биологическая переработка осадков сточных вод</h1>
             <p class="hero-text">
               ООО «Лаборатория Биотехнологий» предлагает технологическое решение безотходной 
@@ -99,7 +112,7 @@
             <img src="images/dvfu.png"
               alt="Дальневосточный федеральный университет"
               class="dvfu-logo">
-        </div>  
+          </div>
 
           <p>
             Проект «Технологическое решение по безотходной двухступенчатой биологической переработке осадков сточных 
@@ -127,6 +140,23 @@
               Технологическое решение включает анаэробный биореактор циклического действия и инсектарий для доработки органического остатка. 
               В рамках проектной деятельности технология развивается под рабочим названием Yummy Waste.
             </p>
+          </div>
+
+          <div class="tech-diagram-wrap">
+            <div class="section-label">Схема технологического процесса</div>
+            <!--
+              TODO: замените путь к файлу схемы ниже.
+              Поддерживаются форматы: .png, .jpg, .svg, .webp
+              Рекомендуется SVG или PNG с прозрачным фоном.
+              Пример: src="images/technology-scheme.png"
+            -->
+            <div class="tech-diagram-placeholder">
+              <span>📊</span>
+              <p>Здесь будет схема технологического процесса.</p>
+              <!-- РАСКОММЕНТИРУЙТЕ И УКАЖИТЕ ИМЯ ФАЙЛА:
+              <img src="images/ИМЯ-ФАЙЛА-СХЕМЫ.png" alt="Схема двухступенчатой биологической переработки осадков сточных вод" class="tech-diagram-img" />
+              -->
+            </div>
           </div>
 
           <div class="technology-grid">
@@ -344,7 +374,7 @@
           <div class="section-head compact">
             <h2>О компании</h2>
             <p>
-              ООО «Лаборатория Биотехнологий» - научно-технологическая компания,
+              ООО «Лаборатория Биотехнологий» — научно-технологическая компания,
               занимающаяся разработкой биотехнологических решений в области переработки
               органических отходов и экологических технологий. Компания проводит исследования,
               разрабатывает технологические решения и реализует проекты, направленные на
@@ -389,99 +419,88 @@
 
       <section id="team" class="section">
         <div class="container">
+
           <div class="section-head">
             <h2>Команда</h2>
-            <p>
-              Над разработкой технологии работает междисциплинарная исследовательская команда,
-              объединяющая специалистов ООО «Лаборатория Биотехнологий».
+          </div>
+
+          <div class="team-block">
+            <div class="team-block-label">Команда компании</div>
+            <p class="team-block-desc">
+              Специалисты ООО «Лаборатория Биотехнологий», осуществляющие научное руководство
+              и разработку технологии.
             </p>
+            <div class="cards-grid cards-grid-4 team-grid">
+              <article class="team-card">
+                <div class="avatar">ТА</div>
+                <h3>Таскин Андрей Васильевич</h3>
+                <p>Заведующий лабораторией, кандидат химических наук, научный руководитель проекта</p>
+              </article>
+              <article class="team-card">
+                <div class="avatar">ВВ</div>
+                <h3>Волкова Владислава Николаевна</h3>
+                <p>Участник исследовательской команды проекта</p>
+              </article>
+              <article class="team-card">
+                <div class="avatar">КИ</div>
+                <h3>Казанцев Илья Максимович</h3>
+                <p>Участник исследовательской команды проекта</p>
+              </article>
+              <article class="team-card">
+                <div class="avatar">ФД</div>
+                <h3>Федотов Демьян Романович</h3>
+                <p>Участник исследовательской команды проекта</p>
+              </article>
+            </div>
           </div>
 
-          <div class="cards-grid cards-grid-4 team-grid">
-            <article class="team-card">
-              <div class="avatar">ТА</div>
-              <h3>Таскин Андрей Васильевич</h3>
-              <p>Заведующий лабораторией, кандидат химических наук, научный руководитель проекта</p>
-            </article>
-            <article class="team-card">
-              <div class="avatar">ВВ</div>
-              <h3>Волкова Владислава Николаевна</h3>
-              <p>Участник исследовательской команды проекта</p>
-            </article>
-            <article class="team-card">
-              <div class="avatar">КИ</div>
-              <h3>Казанцев Илья Максимович</h3>
-              <p>Участник исследовательской команды проекта</p>
-            </article>
-            <article class="team-card">
-              <div class="avatar">ФД</div>
-              <h3>Федотов Демьян Романович</h3>
-              <p>Участник исследовательской команды проекта</p>
-            </article>
+          <div class="team-block team-block-secondary">
+            <div class="team-block-label">Команда проекта «Yummy Waste»</div>
+            <p class="team-block-desc">
+              Проект реализуется при поддержке Фонда содействия инновациям и на базе ДВФУ
+              в рамках программы «Студенческий стартап». Разработка включает исследовательскую
+              деятельность и подготовку сайта компании в качестве дипломной работы.
+            </p>
+            <div class="cards-grid cards-grid-3">
+              <article class="card">
+                <h3>Студенческий стартап</h3>
+                <p>
+                  Проект реализуется при поддержке Фонда содействия инновациям
+                  в рамках программы «Студенческий стартап».
+                </p>
+              </article>
+              <article class="card">
+                <h3>КСИ ДВФУ</h3>
+                <p>
+                  Проект участвовал в конкурсе студенческих инициатив
+                  Дальневосточного федерального университета.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Исследовательская деятельность</h3>
+                <p>
+                  Исследования и разработка технологии выполняются при участии
+                  студентов и научных сотрудников ДВФУ.
+                </p>
+              </article>
+            </div>
+
+            <div class="project-team">
+              <h3>Студенческая команда проекта</h3>
+              <ul class="project-team-list">
+                <li>Душенко Ангелина</li>
+                <li>Казанцев Илья</li>
+                <li>Батальщикова Елена</li>
+                <li>Шишкин Виктор</li>
+                <li>Кузьмин Всеволод</li>
+              </ul>
+            </div>
           </div>
+
         </div>
       </section>
 
-        <section class="section section-muted">
-  <div class="container">
-
-    <div class="section-head">
-      <h2>Деятельность проекта</h2>
-      <p>
-        Развитие технологии осуществляется в рамках образовательных и
-        исследовательских программ Дальневосточного федерального университета
-        при поддержке Фонда содействия инновациям.
-      </p>
-    </div>
-
-    <div class="cards-grid cards-grid-3">
-
-      <article class="card">
-        <h3>Студенческий стартап</h3>
-        <p>
-          Проект реализуется при поддержке Фонда содействия инновациям
-          в рамках программы «Студенческий стартап».
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>КСИ ДВФУ</h3>
-        <p>
-          Проект участвовал в конкурсе студенческих инициатив
-          Дальневосточного федерального университета.
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Исследовательская деятельность</h3>
-        <p>
-          Исследования и разработка технологии выполняются при участии
-          студентов и научных сотрудников ДВФУ.
-        </p>
-      </article>
-
-    </div>
-
-    <div class="project-team">
-      <h3>Студенческая команда проекта</h3>
-
-      <ul class="project-team-list">
-        <li>Душенко Ангелина</li>
-        <li>Казанцев Илья</li>
-        <li>Батальщикова Елена</li>
-        <li>Шишкин Виктор</li>
-        <li>Кузьмин Всеволод</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
- 
-        </div>
-      </section>
-
-      <section class="section section-muted">
+      <section id="publications" class="section section-muted">
         <div class="container">
           <div class="section-head">
             <h2>Публикации</h2>
@@ -491,22 +510,76 @@
               осадков сточных вод и экологическим технологиям.
             </p>
           </div>
+
           <div class="cards-grid cards-grid-3">
+
+            <!--
+              ===== ПУБЛИКАЦИЯ 1 =====
+              TODO: замените значение href на имя вашего PDF-файла.
+              Файл должен лежать рядом с index.html (или укажите путь, например: "pdf/publication1.pdf").
+              Пример: href="publication-bioconversion.pdf"
+            -->
             <article class="card publication-card">
+              <div class="pub-icon">📄</div>
+              <div class="pub-meta">
+                <span class="pub-tag">Биоконверсия</span>
+              </div>
               <h3>Публикации по биоконверсии органических отходов</h3>
               <p>Научные статьи и материалы исследований команды.</p>
-              <button class="btn btn-secondary btn-small" type="button">Открыть материал</button>
+              <a
+                href="ИМЯ-ФАЙЛА-ПУБЛИКАЦИИ-1.pdf"
+                class="btn btn-secondary btn-small"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Открыть PDF</a>
             </article>
+
+            <!--
+              ===== ПУБЛИКАЦИЯ 2 =====
+              TODO: замените значение href на имя вашего PDF-файла.
+              Пример: href="publication-anaerobic.pdf"
+            -->
             <article class="card publication-card">
+              <div class="pub-icon">📄</div>
+              <div class="pub-meta">
+                <span class="pub-tag">Анаэробная переработка</span>
+              </div>
               <h3>Исследования по анаэробной переработке осадков сточных вод</h3>
               <p>Материалы по технологическим решениям и результатам испытаний.</p>
-              <button class="btn btn-secondary btn-small" type="button">Открыть материал</button>
+              <a
+                href="ИМЯ-ФАЙЛА-ПУБЛИКАЦИИ-2.pdf"
+                class="btn btn-secondary btn-small"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Открыть PDF</a>
             </article>
+
+            <!--
+              ===== ПУБЛИКАЦИЯ 3 =====
+              TODO: замените значение href на имя вашего PDF-файла.
+              Пример: href="publication-bsfl.pdf"
+            -->
             <article class="card publication-card">
+              <div class="pub-icon">📄</div>
+              <div class="pub-meta">
+                <span class="pub-tag">BSFL · Инсектарий</span>
+              </div>
               <h3>Материалы по инсектариям и BSFL</h3>
               <p>Публикации, посвящённые доработке осадка и продуктам второй ступени переработки.</p>
-              <button class="btn btn-secondary btn-small" type="button">Открыть материал</button>
+              <a
+                href="ИМЯ-ФАЙЛА-ПУБЛИКАЦИИ-3.pdf"
+                class="btn btn-secondary btn-small"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Открыть PDF</a>
             </article>
+
+            <!--
+              ===== ДОБАВИТЬ ПУБЛИКАЦИЮ =====
+              Скопируйте блок <article>...</article> выше и вставьте сюда,
+              чтобы добавить новую публикацию. Не забудьте обновить href и тексты.
+            -->
+
           </div>
         </div>
       </section>
@@ -519,7 +592,7 @@
               <p><strong>Компания:</strong> ООО «Лаборатория Биотехнологий»</p>
               <p><strong>Проект:</strong> Yummy Waste</p>
               <p><strong>Регион:</strong> Владивосток, Приморский край</p>
-              <p><strong>Email:</strong> <a href="mailto:info@Yummywaste.ru">info@Yummywaste.ru</a></p>
+              <p><strong>Email:</strong> <a href="mailto:info@example.ru">info@example.ru</a></p>
               <p><strong>Телефон:</strong> <a href="tel:+79000000000">+7 900 000 00 00</a></p>
               <p><strong>Адрес:</strong> укажите фактический адрес и юридические реквизиты компании</p>
             </div>
@@ -584,10 +657,11 @@
         <div class="footer-links">
           <a href="#">Политика конфиденциальности</a>
           <a href="#">Пользовательское соглашение</a>
-          <a href="#contacts">Контакты</a>
+          <a href="#top">Наверх</a>
         </div>
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
