@@ -3,7 +3,7 @@
   --surface: rgba(255, 255, 255, 0.92);
   --surface-strong: #ffffff;
   --text: #172126;
-  --muted: #5f6d68;
+  --muted: #4e675e;
   --line: #d8e2dc;
   --accent: #1f9d69;
   --accent-dark: #157351;
@@ -854,8 +854,130 @@ textarea.error {
 }
 
 .project-team-list li {
-  background: #f3f6f5;
+  background: #e5edeb;
   padding: 10px 16px;
   border-radius: 8px;
   font-size: 0.95rem;
+}
+
+
+.tech-diagram-wrap {
+  margin: 0 0 40px;
+}
+
+.section-label {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin-bottom: 18px;
+}
+
+.tech-diagram-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 220px;
+  border: 2px dashed #bdd9c8;
+  border-radius: var(--radius);
+  background: #f0f8f3;
+  padding: 36px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.tech-diagram-placeholder span {
+  font-size: 2.4rem;
+}
+
+.tech-diagram-placeholder p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+.tech-diagram-placeholder code {
+  background: #dff0e7;
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  color: var(--accent-dark);
+}
+
+.tech-diagram-img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+/* ── Блоки команды ── */
+.team-block {
+  margin-bottom: 56px;
+}
+
+.team-block:last-child {
+  margin-bottom: 0;
+}
+
+.team-block-secondary {
+  padding-top: 48px;
+  border-top: 1px solid var(--line);
+}
+
+.team-block-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 10px;
+}
+
+.team-block-desc {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 740px;
+  margin: 0 0 28px;
+}
+
+.pub-icon {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.pub-meta {
+  margin-bottom: 10px;
+}
+
+.pub-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #e4f4ec;
+  color: var(--accent-dark);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.publication-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.publication-card h3 {
+  flex: 1;
+}
+
+.publication-card .btn {
+  margin-top: auto;
+  padding-top: 0;
 }
