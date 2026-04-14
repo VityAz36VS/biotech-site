@@ -68,6 +68,16 @@ function validatePhone(phone) {
 }
 
 function markFieldState(field, isValid) {
+  if (!field) return;
+
+  if (field.type === 'checkbox') {
+    const wrapper = field.closest('.consent-checkbox');
+    if (wrapper) {
+      wrapper.classList.toggle('error', !isValid);
+    }
+    return;
+  }
+
   field.classList.toggle('error', !isValid);
 }
 
@@ -82,6 +92,7 @@ if (form) {
       phone: form.querySelector('[name="phone"]'),
       service: form.querySelector('[name="service"]'),
       message: form.querySelector('[name="message"]'),
+      consent: form.querySelector('[name="consent"]'),
     };
 
     const values = {
@@ -90,7 +101,8 @@ if (form) {
       phone: String(formData.get('phone') || '').trim(),
       service: String(formData.get('service') || '').trim(),
       message: String(formData.get('message') || '').trim(),
-    };
+      consent: fields.consent ? fields.consent.checked : false,
+    };  
 
     const validations = {
       name: values.name.length >= 2,
@@ -98,6 +110,7 @@ if (form) {
       phone: validatePhone(values.phone),
       service: values.service.length > 0,
       message: values.message.length >= 10,
+      consent: values.consent,
     };
 
     Object.entries(fields).forEach(([key, field]) => {
@@ -107,11 +120,11 @@ if (form) {
     const hasError = Object.values(validations).some((value) => !value);
 
     if (hasError) {
-      setStatus('Проверьте поля формы: укажите корректные контактные данные и описание задачи.', 'error');
+      setStatus('Проверьте поля формы: укажите корректные контактные данные, описание задачи и подтвердите согласие на обработку персональных данных.', 'error');
       return;
     }
 
-    setStatus('Заявка заполнена корректно. Для реальной отправки подключите backend или сервис обработки форм.', 'success');
+    setStatus('Форма заполнена корректно. Модуль отправки заявок будет подключён на этапе внедрения.', 'success');
 
     console.log('Форма готова к отправке:', values);
     form.reset();
