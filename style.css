@@ -466,6 +466,40 @@ button {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.products-grid .product-card:nth-child(1),
+.products-grid .product-card:nth-child(2),
+.products-grid .product-card:nth-child(3) {
+  grid-column: span 2;
+}
+
+.products-grid .product-card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.products-grid .product-card:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+@media (max-width: 860px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid .product-card:nth-child(1),
+  .products-grid .product-card:nth-child(2),
+  .products-grid .product-card:nth-child(3),
+  .products-grid .product-card:nth-child(4),
+  .products-grid .product-card:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
 .step-item {
   padding: 20px;
   border-radius: 22px;
@@ -568,6 +602,7 @@ button {
   font-weight: 800;
   font-size: 1.35rem;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .avatar img {
@@ -830,10 +865,6 @@ textarea.error {
   }
 }
 
-.section-head {
-  max-width: 900px;
-  margin: 0 auto 40px auto;
-}
 
 .project-team {
   margin-top: 50px;
@@ -980,4 +1011,26 @@ textarea.error {
 .publication-card .btn {
   margin-top: auto;
   padding-top: 0;
+}
+
+/* ── Чекбокс согласия ── */
+.consent-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.consent-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 auto;
+}
+
+.consent-checkbox span {
+  margin: 0;
+  font-weight: 400;
+  color: var(--muted);
 }
